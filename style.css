@@ -238,8 +238,8 @@
     .conhecimentos {
         display: grid;
         grid-template-columns: repeat(16, 1fr);
-        grid-template-rows: repeat(6, 4rem);
-        row-gap: .6rem;
+        grid-template-rows: repeat(6, 6rem);
+        row-gap: 1.2rem;
     }
     
     .conhecimento:nth-child(1) {
@@ -293,8 +293,31 @@
     .conhecimento-header {
         display: flex;
         align-items: center;
+        color: #945019;
     }
     
     .conhecimento-header i {
         font-size: 2.5rem;
+    }
+    
+    .conhecimento-header h3 {
+        font-size: var(--font-secundary);
+        font-size: 2rem;
+        padding-left: 1rem;
+    }
+    
+    .conhecimento-text {
+        font-family: var(--font-action);
+        margin-top: 1rem;
+    }
+    
+    .conhecimentos-img-wrapper {
+        grid-column: 6/11;
+        grid-row: 3/6;
+        width: 100%;
+    }
+    
+    .conhecimentos-img-wrapper img {
+        object-fit: cover;
+        width: 100%;
     }
