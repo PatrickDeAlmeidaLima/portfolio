@@ -14,6 +14,10 @@
         --font-action: "Mulish", serif;
     }
     
+    html {
+        scroll-behavior: smooth;
+    }
+    
     .hamburguer {
         /*background-color: ;*/
         width: 2rem;
@@ -120,7 +124,12 @@
         left: 15%;
     }
     
+    .banner-btn {
+        box-shadow: 0 0.1rem 0.6rem #000000;
+    }
+    
     .sidebar {
+        z-index: +1;
         background-color: #2b2826;
         width: 20rem;
         height: 100vh;
@@ -575,4 +584,67 @@
         padding: 1rem;
         cursor: pointer;
         grid-column: 2;
+    }
+    
+    footer {
+        width: 100%;
+        height: 7rem;
+        background-color: #17181b;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .footer-content {
+        width: 60%;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .footer-content p {
+        font-family: var(--font-action);
+        color: #a7a7a7;
+        font-size: 1.2rem;
+    }
+    
+    .social-list a {
+        margin: 0 2rem;
+        background-color: #615353;
+        color: #a7a7a7;
+        height: 2rem;
+        width: 2rem;
+        font-size: 1.5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 90%;
+        transition: background-color 1s;
+    }
+    
+    .social-list a:hover {
+        background-color: #000;
+    }
+    
+    .social-list ul {
+        display: flex;
+    }
+    
+    #link-topo {
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        display: flex;
+        right: 3rem;
+        bottom: 3rem;
+        width: 3rem;
+        height: 3rem;
+        background: #F2994A;
+        /* fallback for old browsers */
+        background: -webkit-linear-gradient(to left, #F2C94C, #2b2826);
+        /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to left, #945019, #2b2826);
+        /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        color: white;
+        border-radius: .3rem;
+        box-shadow: 0 0.1rem 0.6rem #000000;
     }
